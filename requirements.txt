@@ -1,0 +1,11 @@
+# Core dependencies for Customer Intelligence Platform
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyter
+fastapi
+uvicorn
+streamlit
+pytest
