@@ -9,3 +9,9 @@ fastapi
 uvicorn
 streamlit
 pytest
+pandera
+xgboost
+lightgbm
+optuna
+joblib
+
