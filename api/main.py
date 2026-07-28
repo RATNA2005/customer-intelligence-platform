@@ -1,10 +1,16 @@
 import os
+import sys
+
+# Ensure root directory is in sys.path to resolve src imports
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import pandas as pd
 import numpy as np
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Any
 from src.models_registry import LocalModelRegistry
+
 
 app = FastAPI(
     title="Customer Intelligence Platform API",

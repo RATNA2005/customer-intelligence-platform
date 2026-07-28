@@ -1,10 +1,16 @@
 import os
+import sys
+
+# Ensure root directory is in sys.path to resolve src imports
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import streamlit as st
 import pandas as pd
 import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
 from src.models_registry import LocalModelRegistry
+
 
 # Setup Page Configuration
 st.set_page_config(
